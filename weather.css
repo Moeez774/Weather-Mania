@@ -1,0 +1,637 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    position: fixed;
+}
+
+.video1 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.video2 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.video3 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.video4 {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.btn {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+
+@keyframes vid22 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.videomain {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    flex-direction: column;
+    gap: 0px;
+    animation: mainanime 1s ease-in-out forwards;
+}
+
+.mainhead {
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 80px;
+    color: skyblue;
+    background: linear-gradient(to bottom, rgb(122, 241, 122), green);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+.ab {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.inp {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 185%;
+    position: relative;
+    right: 105%;
+    border-radius: 45px;
+    margin-top: 25%;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.searchbtn {
+    background-color: rgb(32, 153, 32);
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 45%;
+    position: relative;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.searchbtn:hover {
+    background-color: green;
+}
+.searchbtn:active{
+    background-color: rgb(25, 143, 25);
+}
+
+.inp:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@keyframes mainanime {
+    0% {
+        transform: translateY(-527px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes second {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes topanime {
+    0% {
+        position: relative;
+        top: 40px;
+    }
+
+    100% {
+        position: relative;
+        top: 0px;
+        flex-direction: row;
+    }
+}
+
+@keyframes btnanime {
+    0% {
+        position: relative;
+        left: 0%;
+        bottom: 0px;
+    }
+
+    100% {
+        position: relative;
+        left: 95%;
+        bottom: 17px;
+    }
+}
+
+#upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes upperanime {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-306px);
+    }
+}
+
+@keyframes btnanime {
+    0% {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    100% {
+        position: relative;
+        bottom: 119px;
+        left: 241px
+    }
+}
+
+.update {
+    display: flex;
+    display: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    bottom: 370px;
+    transform: translateX(-676px);
+}
+
+#temp {
+    display: flex;
+}
+
+#icon1{
+    width: 9%;
+}
+
+#img1{
+    width: 100%;
+}
+#icon2{
+    width: 20%;
+}
+#img2{
+    width: 100%;
+    position: relative;
+    left: 101%;
+}
+#icon3{
+    width: 20%;
+}
+#img3{
+    width: 100%;
+    position: relative;
+    left: 200%;
+}
+#icon4{
+    width: 20%;
+}
+#img4{
+    width: 100%;
+    position: relative;
+    left: 307%;
+}
+
+#C {
+    font-size: 40px;
+    padding-left: 30px;
+    color: white;
+    position: relative;
+    top: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+
+#city {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+    position: relative;
+    left: 47%;
+    bottom: 80px;
+}
+@keyframes updateanime {
+    0%{
+        transform: translateX(-640px);
+    }
+    100%{
+        transform: translateX(105px);
+    }
+}
+#loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    position: relative;
+}
+#l1{
+    width: 5%;
+}
+#l2{
+    width: 5%;
+}
+#l3{
+    width: 5%;
+}
+#l4{
+    width: 5%;
+}
+#half1{
+    width: 40%;
+    position: relative;
+    left: 100%;
+    display: none;
+}
+#half2{
+    width: 40%;
+    display: none;
+}
+#second1{
+    width: 40%;
+    display: none;
+}#second2{
+    width: 40%;
+    position: relative;
+    right: 100%;
+    display: none;
+}
+@keyframes halfanime {
+    0%{
+        transform: translateX(-705px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-705px);
+    }
+}
+@keyframes secondanime {
+    0%{
+        transform: translateX(685px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(685px);
+    }
+}
+#er{
+    background-color: rgb(31, 179, 31);
+    color: red;
+    padding: 15px 35px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    bottom: 280px;
+    right: 10px;
+    display: none;
+    border-radius: 15px;
+}
+#container1{
+    display: flex;
+    width: 1320px;
+    gap: 97px;
+    margin-bottom: 5px;
+    position: relative;
+    bottom: 230px;
+    display: none;
+    transform: translateY(-20px);
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0px 10px;
+    text-shadow: 2px 2px 5px black;
+}
+#column1{
+    width: 43%;
+    background-color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 40vh;
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+#column2{
+    width: 606px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#row1{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 100%;
+    border-radius: 15px;
+    padding: 0px 10px;
+    display: flex;
+
+}
+#row2{
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 100%;
+    border-radius: 15px;
+    padding: 0px 10px;
+    display: flex;
+}
+@keyframes flexanime1 {
+    0%{
+        transform: translateX(-590px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes flexanime2 {
+    0%{
+        transform: translateX(625px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes flexanime3 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-620px);
+    }
+}
+@keyframes flexanime4 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(655px);
+    }
+}
+#w1{
+    width: 15%;
+    position: relative;
+    left: 85px;
+    opacity: 0;
+}
+#w2{
+    width: 15%;
+    position: relative;
+    left: 14px;
+    opacity: 0;
+}
+#w3{
+    width: 15%;
+    position: relative;
+    right: 58px;
+    opacity: 0;
+}
+#w4{
+    width: 15%;
+    position: relative;
+    right: 129px;
+    opacity: 0;
+}
+#w{
+    padding: 20px 20px;
+}
+#mosam{
+    position: relative;
+    right: 110px;
+    padding-top: 5px;
+}
+#tt{
+    display: flex;
+    width: 0px;
+}
+#t1{
+    width: 200px;
+    font-size: 20px;
+    position: relative;
+    left: 8px;
+    }
+#t2{
+    width: 230px;
+    font-size: 20px;
+    position: relative;
+    left: 3px;
+}
+#t3{
+    width: 210px;
+    font-size: 20px;
+    position: relative;
+    right: 12px;
+}
+#tt{
+  position: relative;
+  right: 100%;
+  top: 45%;
+}
+#ts1{
+    width: 200px;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+    }
+#ts2{
+    width: 230px;
+    font-size: 15px;
+    position: relative;
+    left: 25px;
+}
+#ts3{
+    width: 210px;
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+}
+#tst{
+    position: relative;
+    right: 100%;
+    top: 75%;
+    display: flex;
+    width: 0;
+}
+#kal1{
+    width: 8%;
+    position: relative;
+    left: 107px;
+    opacity: 0;
+}
+#kal2{
+    width: 8%;
+    position: relative;
+    left: 68px;
+    opacity: 0;
+}
+#kal3{
+    width: 8%;
+    position: relative;
+    left: 28px;
+    opacity: 0;
+}
+#kal4{
+    width: 8%;
+    position: relative;
+    right: 10px;
+    opacity: 0;
+}
+#kalimage{
+    padding: 15px 20px;
+}
+#h2{
+    display: flex;
+    width: 0px;
+    position: relative;
+    right: 550px;
+    top: 70px;
+}
+#h21{
+    width: 200px;
+    font-size: 15px;
+    position: relative;
+}
+#h22{
+    width: 200px;
+    font-size: 15px;
+    position: relative;
+    right: 5px;
+}
+#h23{
+    width: 120px;
+    font-size: 15px;
+    position: relative;
+}
+#now{
+    font-size: 15px;
+    position: relative;
+    left: 170px;
+    bottom: 45px;
+}
+#parsoimage{
+    padding: 15px 20px;
+}
+#parso1{
+    width: 8%;
+    position: relative;
+    left: 106px;
+    opacity: 0;
+}
+#parso2{
+    width: 8%;
+    position: relative;
+    left: 66px;
+    opacity: 0;
+}
+#parso3{
+    width: 8%;
+    position: relative;
+    left: 27px;
+    opacity: 0;
+}
+#parso4{
+    width: 8%;
+    position: relative;
+    right: 13px;
+    opacity: 0;
+}
+#nowparso{
+    font-size: 15px;
+    position: relative;
+    left: 167px;
+    bottom: 45px;
+}

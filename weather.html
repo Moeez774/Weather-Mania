@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <main>
+
+        <!-- Images -->
+
+        <section>
+            <div class="video-container">
+                <img class="videomain" id="vidmain" src="Images/pexels-fotios-photos-1107717.jpg" alt="">
+                <img class="video1" style="width: 100%;" id="vid1" src="Images/pexels-61827722-8481307.jpg" alt="">
+                <img class="video2" id="vid2" src="Images/pexels-asphotograpy-877398.jpg" alt="">
+                <img class="video3" id="vid3" src="Images/pexels-joshsorenson-154148.jpg" alt="">
+                <img class="video4" id="vid4" src="Images/pexels-n-voitkevich-4642020.jpg" alt="">
+                <button class="btn" id="btn1">hello</button>
+                <button class="btn" id="btn2">hy</button>
+                <button class="btn" id="btn3">hey</button>
+                <button class="btn" id="btn4">hyyyy</button>
+            </div>
+        </section>
+
+        <!-- first screen -->
+
+        <section>
+            <div class="main" id="mainbox">
+                <div id="upper">
+                    <div class="weathermania" id="mania">
+                        <h1 class="mainhead">WeatherMania</h1>
+                    </div>
+                    <div class="about" id="at">
+                        <p class="ab">Stay updated from weather of any city</p>
+                    </div>
+                </div>
+                <div id="low">
+                    <div class="ui" id="user">
+                        <input class="inp" id="userinput" type="text" placeholder="Enter name of city">
+                    </div>
+                    <div class="search" id="bar">
+                        <button class="searchbtn" id="sbtn">Search</button>
+                    </div>
+                </div>
+        </section>
+
+        <!-- for showing temperature -->
+
+        <section>
+            <div class="update" id="upd">
+                <div id="temp">
+                    <div id="icon1">
+                        <img id="img4" src="Images/sun_processed.png" alt="">
+                    </div>
+                    <div id="icon1">
+                        <img id="img3" src="Images/snow_processed.png" alt="">
+                    </div>
+                    <div id="icon1">
+                        <img id="img2" src="Images/clouds_processed.png" alt="">
+                    </div>
+                    <div id="icon1">
+                        <img id="img1" src="Images/cloudy_processed.png" alt="">
+                    </div>
+                    <div id="C">
+                    </div>
+                </div>
+                <div id="city">
+                </div>
+            </div>
+        </section>
+
+        <!-- for loading animation -->
+
+        <section>
+            <div id="loading">
+                <div id="l1">
+                    <img id="half1" src="Images/sun_processed.png" alt="">
+                </div>
+                <div id="l2">
+                    <img id="half2" src="Images/clouds_processed.png" alt="">
+                </div>
+                <div id="l3">
+                    <img id="second1" src="Images/cloudy_processed.png" alt="">
+                </div>
+                <div id="l4">
+                    <img id="second2" src="Images/snow_processed.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="erro">
+                <p id="er">Invalid city name. Please try again.</p>
+            </div>
+        </section>
+
+        <!-- for showing current day and next two days forecast -->
+
+        <section>
+            <div id="container1">
+                <div id="column1">
+                    <h1 id="day">Today</h1>
+                    <div id="w">
+                        <img id="w1" src="Images/clouds_processed.png" alt="">
+                        <img id="w2" src="Images/cloudy_processed.png" alt="">
+                        <img id="w3" src="Images/sun_processed.png" alt="">
+                        <img id="w4" src="Images/snow_processed.png" alt="">
+                        <h3 id="mosam"></h3>
+                    </div>
+                    <div id="tt">
+                        <div>
+                            <h2 id="t1">In Celsius: <span id="tts1"></span></h2>
+                        </div>
+                        <div>
+                            <h2 id="t2">In Faranhite: <span id="tts2"></span></h2>
+                        </div>
+                        <div>
+                            <h2 id="t3">Humidity: <span id="tts3"></span></h2>
+                        </div>
+                    </div>
+                    <div id="tst">
+                        <div>
+                            <h2 id="ts1">Wind: <span id="wind"></span></h2>
+                        </div>
+                        <div>
+                            <h2 id="ts2">Visibility: <span id="visible"></span></h2>
+                        </div>
+                        <div>
+                            <h2 id="ts3">Clouds: <span id="clouds"></span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="column2">
+                    <div id="row1">
+                        <div>
+                            <h3 id="tomorow"></h3>
+                        </div>
+                        <div id="kalimage">
+                            <img id="kal1" src="Images/clouds_processed.png" alt="">
+                            <img id="kal2" src="Images/cloudy_processed.png" alt="">
+                            <img id="kal3" src="Images/sun_processed.png" alt="">
+                            <img id="kal4" src="Images/snow_processed.png" alt="">
+                            <h2 id="now"></h2>
+                        </div>
+                        <div id="h2">
+                            <div>
+                                <h2 id="h21">In Celsius: <span id="h211"></span></h2>
+                            </div>
+                            <div>
+                                <h2 id="h22">In Faranhite: <span id="h222"></span></h2>
+                            </div>
+                            <div>
+                                <h2 id="h23">Sun Hour: <span id="h233"></span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="row2">
+                        <div>
+                            <h3 id="daytomorow">h</h3>
+                        </div>
+                        <div id="parsoimage">
+                            <img id="parso1" src="Images/clouds_processed.png" alt="">
+                            <img id="parso2" src="Images/cloudy_processed.png" alt="">
+                            <img id="parso3" src="Images/sun_processed.png" alt="">
+                            <img id="parso4" src="Images/snow_processed.png" alt="">
+                            <h2 id="nowparso">Cool Weather</h2>
+                        </div>
+                        <div id="h2">
+                            <div>
+                                <h2 id="h21">In Celsius: <span id="p211"></span></h2>
+                            </div>
+                            <div>
+                                <h2 id="h22">In Faranhite: <span id="p222"></span></h2>
+                            </div>
+                            <div>
+                                <h2 id="h23">Sun Hour: <span id="p233"></span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="weathe.js"></script>
+</body>
+
+</html>
