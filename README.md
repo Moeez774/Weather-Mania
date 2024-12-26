@@ -1,4 +1,25 @@
-# Weather Mania
+Weather Application
 
-A perfect project for checking weather for any city and also forecast for next 2 days in just one click, It's not responsive so it'll not look good on all screens, try to check on PC only. This includes HTML, CSS, and JavaScript.
+Weather Application 🌦️
+
+A desktop-exclusive web application built using JavaScript that provides real-time weather updates and a 2-day forecast.
+
+Features
+
+Real-time weather updates for any city.
+
+Accurate 2-day weather forecast powered by weather APIs.
+
+Desktop-optimized interface for enhanced usability
+
+
+Technologies Used
+
+HTML5: Structure of the application.
+
+CSS3: Styling for a clean layout .
+
+JavaScript: Logic implementation for API integration and functionality.
+
+Weather API: Real-time weather data fetching.
  
